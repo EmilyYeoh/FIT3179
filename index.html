@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<html>
 <head>
   <meta charset="utf-8">
   <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
@@ -9,11 +10,11 @@
 <body>  
   <div id="vis"></div>
   
-  <script>
+  <script type="text/javascript">
     const spec = "https://github.com/EmilyYeoh/FIT3179/blob/main/visualization.vl.json";
-  	vegaEmbed("#vis", spec)
-    	// result.view provides access to the Vega View API
-      .then(result => console.log(result))
-      .catch(console.warn);
-  </script>
+  	vegaEmbed('#vis', spec).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+</script>
 </body>
+</html>
