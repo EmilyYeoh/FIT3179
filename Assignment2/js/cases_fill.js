@@ -14,7 +14,7 @@
     },
     {
       "data": {
-        "url": "https://raw.githubusercontent.com/EmilyYeoh/FIT3179/master/Assignment2/data/covid_dataset.csv"
+        "url": "https://raw.githubusercontent.com/EmilyYeoh/FIT3179/master/Assignment2/data/covid_dataset_clean.csv"
       }, 
       "projection": {"type": "equalEarth"},
       "mark": {"type": "circle"},       
@@ -25,11 +25,12 @@
         "size": {"field": "confirmed", "type": "quantitative"},
         "color": {"field": "confirmed", "type": "quantitative", "scale": {"scheme": "reds"}      
           },
-        "detail": {"field": "day", "type": "nominal"},
+        
         "tooltip": [
       {"field": "Country/Region", "type": "nominal", "title": "Country"},
       {"field": "Province/State", "type": "nominal"},
       {"field": "day", "type": "ordinal"},
+      {"field": "date", "type": "ordinal"},
       {"field": "confirmed", "type": "quantitative"}
     ]
       },
