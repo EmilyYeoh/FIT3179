@@ -21,7 +21,7 @@
  },
  {"calculate": "datum.confirmed/datum.pop*1000000000", "as": "Confirmed per 1,000,000,000 population"}
  ],
- "mark": {"type": "geoshape", "stroke": "black", "strokeWidth": 0.5},
+ "mark": {"type": "geoshape", "stroke": "gray", "strokeWidth": 0.5},
  "encoding": {"color": {
  "field": "Confirmed per 1,000,000,000 population",
  "type": "quantitative",
