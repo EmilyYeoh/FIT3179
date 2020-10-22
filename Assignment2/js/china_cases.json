@@ -1,6 +1,6 @@
 {
  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
- "title": "COVID-19 China Cases (22/3/2020)",
+ "title": {"text": "CHINA COVID-19 CASES (22/3/2020)", "anchor": "middle"},
  "width": 800,
  "height": 600,
  "projection": {"type": "equirectangular"},
@@ -16,14 +16,16 @@
  "url": "https://raw.githubusercontent.com/EmilyYeoh/FIT3179/master/Assignment2/data/covid_dataset_china.csv"
  },
  "key": "Province",
- "fields": ["confirmed", "pop","avg_temp", "avg_hum"]
+ "fields": ["Province", "confirmed", "deaths", "recovered", "pop"]
  }
- },
- {"calculate": "datum.confirmed/datum.pop*1000000000", "as": "Confirmed per 1,000,000,000 population"}
+ }
  ],
- "mark": {"type": "geoshape", "stroke": "gray", "strokeWidth": 0.5},
+ "hconcat": [{
+   "title": "Total Confirmed Cases",
+   "transform": [{"calculate": "datum.confirmed/datum.pop*1000000000", "as": "Cases per 1bil population"}],
+   "mark": {"type": "geoshape", "stroke": "gray", "strokeWidth": 0.5},
  "encoding": {"color": {
- "field": "Confirmed per 1,000,000,000 population",
+ "field": "Cases per 1bil population",
  "type": "quantitative",
  "scale": {
  "type": "threshold",
@@ -35,7 +37,31 @@
  {"field": "properties.admin", "type": "nominal", "title": "Country"},  
  {"field": "properties.name", "type": "nominal", "title": "Province"},
  {"field": "confirmed", "type": "quantitative"},
- {"field": "Confirmed per 1,000,000,000 population", "type": "quantitative", "format": ".2f"}
+ {"field": "Cases per 1bil population", "type": "quantitative", "format": ".2f"}
  ]
  }
+ },
+ {
+   "title": "Total Deaths",
+   "transform": [{"calculate": "datum.deaths/datum.pop*1000000000", "as": "Cases per 1bil population"}],
+   "mark": {"type": "geoshape", "stroke": "gray", "strokeWidth": 0.5},
+ "encoding": {"color": {
+ "field": "Cases per 1bil population",
+ "type": "quantitative",
+ "scale": {
+ "type": "threshold",
+ "domain": [1,10, 50, 150, 300, 450, 600, 750, 900, 1050,1300],
+ "range": ["#fbe7dc","#fad1bd","#fcb49a","#fc9e80","#fc8767", "#fa7051", "#f6573f","#ec3f2f","#d4322c","#de1b20","#ca0b22","#b21218"]
+ }
+ },
+ "tooltip": [
+ {"field": "properties.admin", "type": "nominal", "title": "Country"},  
+ {"field": "properties.name", "type": "nominal", "title": "Province"},
+ {"field": "deaths", "type": "quantitative"},
+ {"field": "Cases per 1bil population", "type": "quantitative", "format": ".2f"}
+ ]
+ }
+ }
+ ]
+ 
 }
