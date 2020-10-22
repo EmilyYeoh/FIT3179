@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "width": 500,
-  "height": 300,
+  "width": 700,
+  "height": 400,
   "projection": {"type": "equalEarth"},
   "title": "COVID-19 Reported Cases",
   "params": [{
@@ -24,7 +24,7 @@
       "encoding": {
         "longitude": {"field": "long", "type": "quantitative"},
         "latitude": {"field": "lat", "type": "quantitative"}, 
-        "size": {"field": "confirmed", "type": "quantitative"},
+        "size": {"field": "confirmed", "type": "quantitative", "scale": {"rangeMax": 1500}},
         "color": {"field": "confirmed", "type": "quantitative", "scale": {"scheme": "reds"}      
           },
         "tooltip": [
