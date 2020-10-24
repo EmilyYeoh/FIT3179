@@ -131,7 +131,7 @@
         "color": {"value": "black"},
         "opacity": {
           "condition": {
-            "test": "datum['Country'] == 'Nauru' || datum['Country'] == 'Libya' || datum['Country'] == 'Kuwait' || datum['Country'] == 'Uruguay' || datum['Country'] == 'Malta' || datum['Country'] == 'United States'",
+            "test": "datum['Country'] == 'Nauru' || datum['Country'] == 'Libya' || datum['Country'] == 'Kuwait' || datum['Country'] == 'Uruguay' || datum['Country'] == 'Malta' || datum['Country'] == 'United States of America'",
             "value": 1
           },
           "value": 0
