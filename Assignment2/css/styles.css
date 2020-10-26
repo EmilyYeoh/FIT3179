@@ -76,7 +76,6 @@ a:focus {
   height: 100%;
   text-align: center;
   background-repeat: no-repeat;
-  height: 100vh;
   min-height: 375px;
   position: relative;
 }
@@ -116,7 +115,7 @@ a:focus {
 }
 
 .tm-hero-text-container-inner {
-  margin-top: -90px;
+  margin-top: -150px;
   color: #FFFFFF;
 font-weight: bold;
 }
