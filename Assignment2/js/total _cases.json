@@ -1,0 +1,83 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "data": {"url": "https://raw.githubusercontent.com/EmilyYeoh/FIT3179/master/Assignment2/data/by_country.csv"},
+  "title": "COVID-19 Cases (22/1/2020 - 22/3/2020)",
+  "width": 500,
+  "height": 300,
+  "layer": [{
+"mark": "line",
+  "transform": [{
+         "aggregate": [{
+                "field": "confirmed",
+                "op": "sum",
+                "as": "total_confirmed"
+         }],
+         "groupby": ["date"]
+  }],
+  "encoding": {
+    "x": {
+          "timeUnit": "utcmonthdate",
+          "field": "date", "type": "ordinal",
+          "title": "Date"
+        },
+    "y": {
+      "field": "total_confirmed",
+      "type": "quantitative",
+      "title": null
+    },
+    "color": {"datum": "confirmed", "type": "nominal", "scale": {"range": ["blue", "red", "grey"]}},
+   
+    "tooltip": [{"field": "total_confirmed", "type": "quantitative"}]
+  }
+},
+{
+       "mark": "line",
+  "transform": [{
+         "aggregate": [{
+                "field": "deaths",
+                "op": "sum",
+                "as": "total_deaths"
+         }],
+         "groupby": ["date"]
+  }],
+  "encoding": {
+    "x": {
+          "timeUnit": "utcmonthdate",
+          "field": "date", "type": "ordinal",
+          "title": "Date"
+        },
+    "y": {
+      "field": "total_deaths",
+      "type": "quantitative"
+    },
+    "color": {"datum": "deaths", "type": "nominal"},
+    
+    "tooltip": [{"field": "total_deaths", "type": "quantitative"}]
+  }
+},
+{
+  "mark": "line",
+  "transform": [{
+         "aggregate": [{
+                "field": "recovered",
+                "op": "sum",
+                "as": "total_recovered"
+         }],
+         "groupby": ["date"]
+  }],
+  "encoding": {
+    "x": {
+          "timeUnit": "utcmonthdate",
+          "field": "date", "type": "ordinal",
+          "title": "Date"
+        },
+    "y": {
+      "field": "total_recovered",
+      "type": "quantitative"
+    },
+    "color": {"datum": "recovered", "type": "nominal"},
+    "tooltip": [{"field": "total_recovered", "type": "quantitative"}]
+  }
+
+}]
+  }
