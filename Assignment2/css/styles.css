@@ -8,19 +8,6 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
-#scatter_plot {
-	left: 100px;
-	right: 100px;
-	/*height: 1000px;
-	width: 800px;*/
-}
-
-#choropleth_map {
-	left: 100px;
-	right: 100px;
-	/*height: 1000px;
-	width: 800px;*/
-}
 
 a {
   transition: all 0.3s ease;
@@ -489,3 +476,19 @@ p {
     margin-top: 20px;
   }
 }
+
+#scatter_plot {
+	left: 200px;
+	right: 200px;
+	/*height: 1000px;
+	width: 800px;*/
+}
+
+#choropleth_map {
+	left: 200px;
+	right: 200px;
+	/*height: 1000px;
+	width: 800px;*/
+}
+
+
