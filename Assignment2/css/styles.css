@@ -8,6 +8,20 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
+#scatter_plot {
+	left: 100px;
+	right: 100px;
+	/*height: 1000px;
+	width: 800px;*/
+}
+
+#choropleth_map {
+	left: 100px;
+	right: 100px;
+	/*height: 1000px;
+	width: 800px;*/
+}
+
 a {
   transition: all 0.3s ease;
 }
@@ -101,7 +115,7 @@ a:focus {
 }
 
 .tm-hero-title {
-  font-size: 3.5rem;
+  font-size: 5.5rem;
   text-shadow: 2px 2px 2px #333;
 }
 
@@ -160,41 +174,7 @@ a:focus {
   color: #3496d8;
 }
 
-/* Work */
-
-.tm-work-description {
-  max-width: 650px;
-  width: 100%;
-  font-size: 0.9rem;
-}
-
-.tm-gallery-container {
-  padding-top: 70px;
-  padding-bottom: 120px;
-}
-
-.tm-gallery-item {
-  margin: 0 15px;
-}
-
-.slick-dots {
-  bottom: -65px;
-}
-
-.slick-dots li {
-  margin: 0 13px;
-}
-
-.slick-dots li button:hover:before,
-.slick-dots li button:focus:before,
-.slick-dots li.slick-active button:before {
-  opacity: 1;
-  color: #3ba0dd;
-}
-
-.slick-dots li button:before {
-  font-size: 26px;
-}
+#
 
 /* Hover Effect */
 /* Common style */
@@ -336,52 +316,6 @@ figure.effect-honey:hover h2 i {
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
-
-/* Contact */
-
-#contact {
-  color: white;
-  background-image: url(../img/the-town-bg-02.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  min-height: 850px;
-  position: relative;
-  padding-bottom: 50px;
-  padding-top: 160px;
-}
-
-.tm-underline {
-  border-top: 2px solid white;
-  height: 8px;
-  width: 100%;
-}
-
-.tm-underline-inner {
-  width: 25%;
-  height: 8px;
-  background: white;
-}
-
-.tm-contact-item {
-  margin-bottom: 75px;
-}
-
-.tm-contact-item-link {
-  display: flex;
-  align-items: center;
-}
-
-.tm-contact-item-link i,
-.tm-contact-item-link span {
-  color: white;
-  transition: all 0.3s ease;
-}
-
-.tm-contact-item-link:hover i,
-.tm-contact-item-link:hover span {
-  color: #3496d8;
-}
-
 .tm-input {
   padding: 8px 25px;
   border-radius: 3px;
