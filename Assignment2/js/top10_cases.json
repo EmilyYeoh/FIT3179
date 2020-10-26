@@ -3,7 +3,6 @@
   "title": {"text": "Top 10 Countries affected by COVID-19", "anchor": "middle"},
   "center": true,
   "data": {"url": "https://raw.githubusercontent.com/EmilyYeoh/FIT3179/master/Assignment2/data/by_country.csv"},
-  "vconcat": [{
     "width": 600,
     "height": 400,
     "mark": {
@@ -40,75 +39,5 @@
       "transform": [{
         "filter": "datum.Country == 'China' || datum.Country == 'Italy' || datum.Country == 'United States of America' || datum.Country == 'Spain' || datum.Country == 'Germany' || datum.Country == 'Iran' || datum.Country == 'France' || datum.Country == 'United Kingdom' || datum.Country == 'South Korea' || datum.Country == 'Switzerland'"
       }]
-  },
-  {
-    "hconcat": [
-{
-    "width": 500,
-    "height": 300,
-    "mark": {
-    "type": "line",
-    "strokeWidth": 2},
-  "encoding": {
-    "x": {
-      "timeUnit": "utcmonthdate",
-      "field": "date", "type": "ordinal",
-      "title": "Date"
-    },
-    "y": {
-      "field": "temperature",
-      "aggregate": "sum",
-      "axis": {"grid": false},
-      "title": "Temperature (degree Celsius)"   
-    },
-    "color": {"field":"Country", "scale":{"scheme": "category20"}},
-    "tooltip": [
-      {"field": "Country", "type": "nominal"},
-      {"field": "date", "timeUnit": "monthdate", "type": "ordinal", "title": "Date"},
-      {"field": "temperature", "type": "quantitative", "title": "Temperature"}],
-    "opacity": {
-      "condition": {"selection": "country", "value": 1},
-      "value": 0}
-    },
-  "transform": [{
-    "filter": "datum.Country == 'China' || datum.Country == 'Italy' || datum.Country == 'United States of America' || datum.Country == 'Spain' || datum.Country == 'Germany' || datum.Country == 'Iran' || datum.Country == 'France' || datum.Country == 'United Kingdom' || datum.Country == 'South Korea' || datum.Country == 'Switzerland'"
-  },
-  {"filter": {"selection": "country"}}]
-  },
-  {
-    "width": 500,
-    "height": 300,
-    "mark": {
-    "type": "line",
-    "strokeWidth": 2},
-  "encoding": {
-    "x": {
-      "timeUnit": "utcmonthdate",
-      "field": "date", "type": "ordinal",
-      "title": "Date"
-    },
-    "y": {
-      "field": "humidity",
-      "aggregate": "sum",
-      "axis": {"grid": false},
-      "title": "Humidity"   
-    },
-    "color": {"field":"Country", "scale":{"scheme": "category20"}},
-    "tooltip": [
-      {"field": "Country", "type": "nominal"},
-      {"field": "date", "timeUnit": "monthdate", "type": "ordinal", "title": "Date"},
-      {"field": "temperature", "type": "quantitative", "title": "Temperature"}],
-    "opacity": {
-      "condition": {"selection": "country", "value": 1},
-      "value": 0}
-    },
-  "transform": [{
-    "filter": "datum.Country == 'China' || datum.Country == 'Italy' || datum.Country == 'United States of America' || datum.Country == 'Spain' || datum.Country == 'Germany' || datum.Country == 'Iran' || datum.Country == 'France' || datum.Country == 'United Kingdom' || datum.Country == 'South Korea' || datum.Country == 'Switzerland'"
-  },
-  {"filter": {"selection": "country"}}]
-  }
-    ]
-  }
-  ]
-  
+   
 }
