@@ -119,8 +119,9 @@ a:focus {
 
 .tm-hero-title {
   text-align: center;	
-  font-size: 5.5rem;
+  font-size: 6.5rem;
   text-shadow: 2px 2px 2px #333;
+  color: white;
 }
 
 .tm-intro-next {
