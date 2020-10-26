@@ -3,7 +3,7 @@
   "width": 700,
   "height": 400,
   "projection": {"type": "equalEarth"},
-  "title": "COVID-19 Reported Cases",
+  "title": "COVID-19 Deaths and Cases (22/1/2020 - 22/3/2020)",
   "params": [{
     "name": "Day", "value": 0, "bind": {"input": "range", "min": 0, "max": 60, "step": 1}
   }],
@@ -24,7 +24,7 @@
       "encoding": {
         "longitude": {"field": "long", "type": "quantitative"},
         "latitude": {"field": "lat", "type": "quantitative"}, 
-        "size": {"field": "confirmed", "type": "quantitative", "scale": {"rangeMax": 1500}},
+        "size": {"field": "confirmed", "type": "quantitative", "scale": {"rangeMax": 3000}, "legend": null},
         "color": {"field": "confirmed", "type": "quantitative", "scale": {"scheme": "reds"}      
           },
         "tooltip": [
@@ -36,6 +36,29 @@
     ]
       },
       "transform": [{"filter": "datum.day == Day"}]
+    },
+    {
+       "data": {
+        "url": "https://raw.githubusercontent.com/EmilyYeoh/FIT3179/master/Assignment2/data/covid_dataset_with_date.csv"
+      }, 
+      "projection": {"type": "equalEarth"},
+      "mark": {"type": "square", "color": "black"}, 
+      "encoding": {
+        "longitude": {"field": "long", "type": "quantitative"},
+        "latitude": {"field": "lat", "type": "quantitative"}, 
+        "size": {"field": "deaths", "type": "quantitative", "scale": {"rangeMax": 2500}},
+        "color": {"datum": "deaths", "type": "nominal", "scale": {"range": ["black"]}},
+        
+        "tooltip": [
+      {"field": "Country/Region", "type": "nominal", "title": "Country"},
+      {"field": "Province/State", "type": "nominal"},
+      {"field": "day", "type": "ordinal"},
+      {"field": "date", "type": "ordinal"},
+      {"field": "deaths", "type": "quantitative"}
+    ]
+      },
+      "transform": [{"filter": "datum.day == Day"}]
+    
     }
   ]
 }
