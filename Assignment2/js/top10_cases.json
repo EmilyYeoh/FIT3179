@@ -3,7 +3,8 @@
   "title": {"text": "Top 10 Countries affected by COVID-19", "anchor": "middle"},
   "center": true,
   "data": {"url": "https://raw.githubusercontent.com/EmilyYeoh/FIT3179/master/Assignment2/data/by_country.csv"},
-    "width": 600,
+  "vconcat": [{
+"width": 600,
     "height": 400,
     "mark": {
         "type": "line",
@@ -26,18 +27,84 @@
           "axis": {"grid": false},
           "title": "Total Confirmed Cases"   
         },
-        "color": {"field":"Country", "scale":{"scheme": "category20"}},
+        "color": {"field":"Country", "scale":{"scheme": "tableau10"}},
         "tooltip": [
           {"field": "Country", "type": "nominal"},
           {"field": "date", "timeUnit": "monthdate", "type": "ordinal", "title": "Date"},
           {"field": "confirmed", "type": "quantitative", "title": "Total Confirmed Cases"}],
         "opacity": {
           "condition": {"selection": "country", "value": 1},
-          "value": 0.2}
+          "value": 0.1}
         },
 
       "transform": [{
         "filter": "datum.Country == 'China' || datum.Country == 'Italy' || datum.Country == 'United States of America' || datum.Country == 'Spain' || datum.Country == 'Germany' || datum.Country == 'Iran' || datum.Country == 'France' || datum.Country == 'United Kingdom' || datum.Country == 'South Korea' || datum.Country == 'Switzerland'"
       }]
-   
+  },
+  {"hconcat": [{
+    "width": 300,
+    "height": 200,
+    "mark": {
+    "type": "circle"},
+  "encoding": {
+    "x": {
+      "field": "density", "type": "quantitative",
+      "axis": {"grid": false}
+    },
+    "y": {
+      "field": "confirmed", "type": "quantitative",
+      "axis": {"grid": false}
+    },
+    "size": {"value": 60},
+    "color": {"field":"Country", "type": "nominal", "title": "Country", "scale":{"scheme": "tableau10"}},
+    "tooltip": [
+      {"field": "Country", "type": "nominal"},
+      {"field": "pop", "type": "quantitative", "title": "Population"},
+      {"field": "density", "type": "quantitative", "title": "Population Density (km2)"},
+      {"field": "confirmed", "type": "quantitative", "title": "Total Confirmed Cases"}],
+      "opacity": {
+          "condition": {"selection": "country", "value": 1},
+          "value": 0.1}
+      },
+      
+  "transform": [{
+    "filter": "datum.Country == 'China' || datum.Country == 'Italy' || datum.Country == 'United States of America' || datum.Country == 'Spain' || datum.Country == 'Germany' || datum.Country == 'Iran' || datum.Country == 'France' || datum.Country == 'United Kingdom' || datum.Country == 'South Korea' || datum.Country == 'Switzerland'"
+  },
+  {"filter": "datum.day == 60"}
+  ]
+  },
+  {
+    "width": 300,
+    "height": 200,
+    "mark": {
+    "type": "circle"},
+  "encoding": {
+    "x": {
+      "field": "medianage", "type": "quantitative",
+      "axis": {"grid": false}
+    },
+    "y": {
+      "field": "confirmed", "type": "quantitative",
+      "axis": {"grid": false}
+    },
+    "size": {"value": 60},
+    "color": {"field":"Country", "type": "nominal", "title": "Country", "scale":{"scheme": "tableau10"}},
+    "tooltip": [
+      {"field": "Country", "type": "nominal"},
+      {"field": "medianage", "type": "quantitative", "title": "Median Age"},
+      {"field": "confirmed", "type": "quantitative", "title": "Total Confirmed Cases"}],
+      "opacity": {
+          "condition": {"selection": "country", "value": 1},
+          "value": 0.1}
+      },
+  "transform": [{
+    "filter": "datum.Country == 'China' || datum.Country == 'Italy' || datum.Country == 'United States of America' || datum.Country == 'Spain' || datum.Country == 'Germany' || datum.Country == 'Iran' || datum.Country == 'France' || datum.Country == 'United Kingdom' || datum.Country == 'South Korea' || datum.Country == 'Switzerland'"
+  },
+  {"filter": "datum.day == 60"}
+  ]
+  }
+  ]}]
+
+  
+      
 }
