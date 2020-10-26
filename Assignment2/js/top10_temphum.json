@@ -1,0 +1,66 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "data": {"url": "https://raw.githubusercontent.com/EmilyYeoh/FIT3179/master/Assignment2/data/by_country.csv"},
+  "resolve": {"legend": {"color": "independent"}, "scale": {"color": "independent"}},
+  "vconcat": [
+    {
+      "title": {"text": "Humidity of Top 10 Countries affected by COVID-19", "anchor": "middle"},
+    "selection": {"country": {"type": "interval", "on": "[mousedown[!event.shiftKey], mouseup] > mousemove",
+      "translate": "[mousedown[!event.shiftKey], mouseup] > mousemove"}},
+    "width": 600,
+    "height": 200,
+    "mark": {
+    "type": "rect"},
+  "encoding": {
+    "x": {
+      "timeUnit": "utcmonthdate",
+      "field": "date", "type": "ordinal",
+      "title": "Date"
+    },
+    "y": {
+      "field": "Country",
+      "axis": {"grid": false},
+      "title": "Humidity"   
+    },
+    "color": {"field":"humidity", "aggregate": "max", "type": "quantitative","scale":{"scheme": "brownbluegreen"}, "title": "Humidity"},
+    "tooltip": [
+      {"field": "Country", "type": "nominal"},
+      {"field": "date", "timeUnit": "monthdate", "type": "ordinal", "title": "Date"},
+      {"field": "temperature", "type": "quantitative", "title": "Temperature"}],
+      "opacity": {"condition": {"selection": "country", "value": 1}, "value": 0.2}
+      },
+  "transform": [{
+    "filter": "datum.Country == 'China' || datum.Country == 'Italy' || datum.Country == 'United States of America' || datum.Country == 'Spain' || datum.Country == 'Germany' || datum.Country == 'Iran' || datum.Country == 'France' || datum.Country == 'United Kingdom' || datum.Country == 'South Korea' || datum.Country == 'Switzerland'"
+  }]
+  },
+  {
+    "title": {"text": "Temperature of Top 10 Countries affected by COVID-19", "anchor": "middle"},
+    "width": 600,
+    "height": 200,
+    "mark": {
+    "type": "rect",
+    "strokeWidth": 2},
+  "encoding": {
+    "x": {
+      "timeUnit": "utcmonthdate",
+      "field": "date", "type": "ordinal",
+      "title": "Date"
+    },
+    "y": {
+      "field": "Country",
+      "axis": {"grid": false},
+      "title": "Temperature (degree Celsius)"   
+    },
+    "color": {"field":"temperature", "aggregate": "max", "type": "quantitative","scale":{"scheme": "blueorange"}, "title": "Temperature"},
+    "tooltip": [
+      {"field": "Country", "type": "nominal"},
+      {"field": "date", "timeUnit": "monthdate", "type": "ordinal", "title": "Date"},
+      {"field": "temperature", "type": "quantitative", "title": "Temperature"}],
+      "opacity": {"condition": {"selection": "country", "value": 1}, "value": 0.2}
+      },
+    "transform": [{
+    "filter": "datum.Country == 'China' || datum.Country == 'Italy' || datum.Country == 'United States of America' || datum.Country == 'Spain' || datum.Country == 'Germany' || datum.Country == 'Iran' || datum.Country == 'France' || datum.Country == 'United Kingdom' || datum.Country == 'South Korea' || datum.Country == 'Switzerland'"
+  }]
+  }]
+  
+}
