@@ -112,6 +112,7 @@ a:focus {
   flex-flow: column;
   justify-content: center;
   color: #FFFFFF;
+  font-weight: bold;
 }
 
 .tm-hero-text-container-inner {
