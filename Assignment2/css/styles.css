@@ -73,6 +73,7 @@ a:focus {
 #hero {
   background-image: url("https://raw.githubusercontent.com/EmilyYeoh/FIT3179/master/Assignment2/css/covid_header.jpg");
   background-size: cover;
+  opacity: 0.5;
   height: 100%;
   text-align: center;
   background-repeat: no-repeat;
