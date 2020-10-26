@@ -78,7 +78,7 @@ a:focus {
     background-position: center -300px;
   }
 }
-css 
+
 @media (min-height: 500px) and (max-height: 679px) {
   #hero {
     background-position: center -400px;
@@ -475,6 +475,11 @@ p {
     margin-left: 0;
     margin-top: 20px;
   }
+}
+
+.content {
+  max-width: 500px;
+  margin: auto;
 }
 
 #scatter_plot {
