@@ -113,11 +113,13 @@ a:focus {
   justify-content: center;
   color: #FFFFFF;
   font-weight: bold;
+  background-color: #000000;
 }
 
 .tm-hero-text-container-inner {
   margin-top: -90px;
   color: #FFFFFF;
+  background-color: #000000;
 }
 
 .tm-hero-title {
