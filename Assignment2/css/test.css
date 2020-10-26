@@ -10,11 +10,13 @@ body {
 }
 
 .header {
-  padding: 60px;
   text-align: center;
-  background: #1abc9c;
   color: white;
-  font-size: 30px;
+  font-size: 40px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .header-img {
