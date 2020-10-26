@@ -111,16 +111,17 @@ a:focus {
   display: flex;
   flex-flow: column;
   justify-content: center;
+  color: #FFFFFF;
 }
 
 .tm-hero-text-container-inner {
   margin-top: -90px;
+  color: #FFFFFF;
 }
 
 .tm-hero-title {
   text-align: center;	
   font-size: 6.5rem;
-  color: white;
 }
 
 .tm-intro-next {
