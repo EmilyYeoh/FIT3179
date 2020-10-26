@@ -118,6 +118,7 @@ a:focus {
 }
 
 .tm-hero-title {
+  text-align: center;	
   font-size: 5.5rem;
   text-shadow: 2px 2px 2px #333;
 }
