@@ -15,74 +15,63 @@
 </head>
   
 <body>
-  <section id = "hero" class="text-white tm-font-big tm-parallax">
-  <div class = "text-center tm-hero-text-container">
-    <div class = "tm-hero-text-container-inner">
-      <h1 class="tm-hero-title"> COVID-19 </h1>
-      <p class="tm-hero-subtitle"> Coronavirus disease 2019 (COVID-19) is a contagious respiratory and vascular (blood vessel) disease. </p>
+  
+  <div class="grid-container">
+  <div class="Header">
+    <h1> COVID-19 </h1>
+    <br>
+    <p> Coronavirus disease 2019 (COVID-19) is a contagious respiratory and vascular (blood vessel) disease </p>
     </div>
-  </div>
-  </section>
-  
-  <h2> COVID-19 SYMPTOMS </h2>
-  
-  <div class="photo-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-5">
-            <a href="http://www.nilssonlee.se/">
-                <img src="css/sorethroat.png" width= "100" height= "100">
-            </a>
-
-            <aside class="photo-box-caption">
-                <span>
+  <div class="Symptoms">
+    <h2> Symptoms <h2/>
+    </div>
+  <div class="Sym1">
+    <img src="css/sorethroat.png" width= "100" height= "100">
+    </div>
+  <div class="Symp2">
+    <img src="css/fever.png" width= "100" height= "100">
+    </div>
+  <div class="Sym3">
+    <img src="css/cough.png" width= "100" height= "100"></div>
+  <div class="Sym4">
+    <img src="css/headache.png" width= "100" height= "100"></div>
+  <div class="Sym5">
+    <img src="css/sorethroat.png" width= "100" height= "100"></div>
+  <div class="ST1">
+    <span>
                     SORETHROAT
-                </span>
-            </aside>
-        </div>
-
-        <div class="photo-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-5">
-            <a href="http://www.flickr.com/photos/rulasibai/">
-                <img src="css/fever.png" width= "100" height= "100">
-            </a>
-
-            <aside class="photo-box-caption">
-                <span>
+                </span></div>
+  <div class="ST2">
+    <h4>
                     FEVER
-                </span>
-            </aside>
-        </div>
-
-        <div class="photo-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-5">
-            <a href="http://www.flickr.com/photos/charliefoster/">
-                <img src="css/cough.png" width= "100" height= "100">
-            </a>
-
-            <aside class="photo-box-caption">
-                <span>
+                </h4></div>
+  <div class="ST3">
+    <span>
                     COUGH
-                </span>
-            </aside>
-        </div>
-  
-    <br>
-    <br>
-    <h2> Visualisation </h2>
-  
-  <h3>Proportional Symbol Map</h3>
-<div id="slider_symbol" class="center"></div>
-
-<h3>This is the second visualisation</h3>
-<div id="line_chart"></div>
+                </span></div>
+  <div class="ST4">
+    <h4>
+                    HEADACHE
+                </h4></div>
+  <div class="ST5">
+    <span>
+                    SORETHROAT
+                </span></div>
+  <div class="Line"></div>
+  <div class="Slider"></div>
+</div>
 
 <script type="text/javascript">
   
   var vis1 = "js/cases_slider.json";
   
-  vegaEmbed('#slider_symbol', vis1).then(function(result) {
+  vegaEmbed('#Line', vis1).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
   
   var vis2 = "js/total_cases.json";
   
-  vegaEmbed('#line_chart', vis2).then(function(result) {
+  vegaEmbed('#Slider', vis2).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 </script>
