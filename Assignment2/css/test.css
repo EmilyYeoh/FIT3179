@@ -12,6 +12,11 @@ p {
     line-height: 1.6em;
 }
 
+.pure-img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
 /*
  * -- Layout Styles --
  */
@@ -37,7 +42,7 @@ p {
     filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='https://raw.githubusercontent.com/EmilyYeoh/FIT3179/master/Assignment2/css/covid_header.jpg', sizingMethod='scale');
     
       
-    height: 200px;
+    height: 100%;
     width: 100%;
     margin-bottom: 3em;
     display: table;
