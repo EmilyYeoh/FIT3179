@@ -485,8 +485,7 @@ p {
 #slider_symbol {
 	/*display: inline-block;
 	margin: 0 auto;*/
-	border:1px solid #eee;
-    	text-align:center !important;
+	
 	/*height: 1000px;
 	width: 800px;*/
 }
@@ -494,6 +493,8 @@ p {
 #line_chart {
 	display: inline-block;
 	margin: 0 auto;
+	margin-left: auto;
+	margin-right: auto;
 	/*
 	left: 200px;
 	right: 200px;
