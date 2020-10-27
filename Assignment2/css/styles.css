@@ -182,6 +182,8 @@ font-weight: bold;
 
 #imagesMain {
   padding: 70px;
+  padding-left: 50px;
+  padding-right: 50px;
   margin-left: 50px;
   margin-right: 50px;
   margin-top: 20px;
