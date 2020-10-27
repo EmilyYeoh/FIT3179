@@ -14,6 +14,48 @@ p {
     line-height: 1.6em;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.5fr 1.2fr 0.4fr 1.9fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "Header Header Header Header Header"
+    "Symptoms Symptoms Symptoms Symptoms Symptoms"
+    "Sym1 Symp2 Sym3 Sym4 Sym5"
+    "ST1 ST2 ST3 ST4 ST5"
+    "Line Line Slider Slider Slider"
+    ". . . . .";
+}
+
+.Header { grid-area: Header; }
+
+.Symptoms { grid-area: Symptoms; }
+
+.Sym1 { grid-area: Sym1; }
+
+.Symp2 { grid-area: Symp2; }
+
+.Sym3 { grid-area: Sym3; }
+
+.Sym4 { grid-area: Sym4; }
+
+.Sym5 { grid-area: Sym5; }
+
+.ST1 { grid-area: ST1; }
+
+.ST2 { grid-area: ST2; }
+
+.ST3 { grid-area: ST3; }
+
+.ST4 { grid-area: ST4; }
+
+.ST5 { grid-area: ST5; }
+
+.Line { grid-area: Line; }
+
+.Slider { grid-area: Slider; }
+
 
 
 /*
