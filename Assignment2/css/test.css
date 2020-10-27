@@ -16,45 +16,54 @@ p {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 0.5fr 1.2fr 0.4fr 1.9fr 1fr;
-  gap: 0px 0px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.8fr 0.3fr 1.9fr;
+  gap: 0px 2px;
   grid-template-areas:
-    "Header Header Header Header Header"
-    "Symptoms Symptoms Symptoms Symptoms Symptoms"
-    "Sym1 Symp2 Sym3 Sym4 Sym5"
-    "ST1 ST2 ST3 ST4 ST5"
-    "Line Line Slider Slider Slider"
-    ". . . . .";
+    "Sym1 Symp2 Sym3 Sym4"
+    "ST1 ST2 ST3 ST4"
+    ". . . .";
 }
 
-.Header { grid-area: Header; }
+.Sym1 { 
+grid-area: Sym1; 
+border: 1px solid black;
+display: block;
+margin: 0 auto;
+}
 
-.Symptoms { grid-area: Symptoms; }
+.Symp2 { grid-area: Symp2; 
+border: 1px solid black;
+display: block;
+margin: 0 auto;}
 
-.Sym1 { grid-area: Sym1; }
+.Sym3 { grid-area: Sym3; 
+border: 1px solid black;
+display: block;
+margin: 0 auto;}
 
-.Symp2 { grid-area: Symp2; }
+.Sym4 { grid-area: Sym4; 
+border: 1px solid black;
+display: block;
+margin: 0 auto;}
 
-.Sym3 { grid-area: Sym3; }
+.ST1 { grid-area: ST1; 
+text-align: center;}
 
-.Sym4 { grid-area: Sym4; }
+.ST2 { grid-area: ST2;
+text-align: center;
+color: #000000;
+}
 
-.Sym5 { grid-area: Sym5; }
+.ST3 { grid-area: ST3; 
+text-align: center;
+color: #000000;
+}
 
-.ST1 { grid-area: ST1; }
+.ST4 { grid-area: ST4; 
+text-align: center;
+color: #000000;}
 
-.ST2 { grid-area: ST2; }
-
-.ST3 { grid-area: ST3; }
-
-.ST4 { grid-area: ST4; }
-
-.ST5 { grid-area: ST5; }
-
-.Line { grid-area: Line; }
-
-.Slider { grid-area: Slider; }
 
 
 
@@ -72,7 +81,7 @@ p {
 /* Hero */
 
 #hero {
-  background-image: url("https://raw.githubusercontent.com/EmilyYeoh/FIT3179/master/Assignment2/css/covid_header.jpg");
+  background-image: url("https://media.istockphoto.com/vectors/coronavirus-background-vector-seamless-pattern-with-covid19-virus-vector-id1213501464?k=6&m=1213501464&s=612x612&w=0&h=ty_tTgYLs0l2mD4dIoyWnbnJW6I52986TWJ8YfiZmiM=");
   background-size: cover;
   height: 100%;
   text-align: center;
@@ -111,13 +120,13 @@ p {
   display: flex;
   flex-flow: column;
   justify-content: center;
-  color: #FFFFFF;
+  color: #000000;
   font-weight: bold;
 }
 
 .tm-hero-text-container-inner {
   margin-top: -90px;
-  color: #FFFFFF;
+  color: #000000;
 font-weight: bold;
 }
 
