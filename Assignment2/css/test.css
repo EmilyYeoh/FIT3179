@@ -16,39 +16,47 @@ p {
 
 .grid-container {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 0.8fr 0.3fr 1.9fr;
   gap: 0px 2px;
   grid-template-areas:
-    "Sym1 Symp2 Sym3 Sym4"
-    "ST1 ST2 ST3 ST4"
-    ". . . .";
+    "Sym1 Symp2 Sym3 Sym4 Sym5"
+    "ST1 ST2 ST3 ST4 ST5"
+    ". . . . .";
 }
+
+
 
 .Sym1 { 
 grid-area: Sym1; 
-border: 1px solid black;
 display: block;
 margin: 0 auto;
 }
 
 .Symp2 { grid-area: Symp2; 
-border: 1px solid black;
 display: block;
 margin: 0 auto;}
 
 .Sym3 { grid-area: Sym3; 
-border: 1px solid black;
 display: block;
 margin: 0 auto;}
 
 .Sym4 { grid-area: Sym4; 
-border: 1px solid black;
 display: block;
 margin: 0 auto;}
 
+.Sym5 { grid-area: Sym5; 
+display: block;
+margin: 0 auto;}
+
+.ST5 { grid-area: ST5; 
+text-align: center;
+color: #000000;}
+
+
 .ST1 { grid-area: ST1; 
-text-align: center;}
+text-align: center;
+color: #000000;}
 
 .ST2 { grid-area: ST2;
 text-align: center;
