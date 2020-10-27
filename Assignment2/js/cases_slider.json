@@ -1,6 +1,6 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "width": 900,
+  "width": 800,
   "height": 700,
   "projection": {"type": "equalEarth"},
   "title": "COVID-19 Deaths and Cases (22/1/2020 - 22/3/2020)",
