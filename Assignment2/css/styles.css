@@ -482,17 +482,21 @@ p {
   margin: auto;
 }
 
-#scatter_plot {
-	left: 200px;
-	right: 200px;
+#slider_symbol {
+	display: inline-block;
+	margin: 0 auto;
+	
 	/*height: 1000px;
 	width: 800px;*/
 }
 
-#choropleth_map {
+#line_chart {
+	display: inline-block;
+	margin: 0 auto;
+	/*
 	left: 200px;
 	right: 200px;
-	/*height: 1000px;
+	height: 1000px;
 	width: 800px;*/
 }
 
