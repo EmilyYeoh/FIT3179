@@ -73,9 +73,9 @@ p {
 
 
     .photo-box img {
-        max-width: 100%;
-        height: auto;
-        min-height: 250px;
+        max-width: 100px;
+        height: 100px;
+        min-height: 100px;
     }
 
     .photo-box aside {
