@@ -1,6 +1,6 @@
 body {
     color: #526066;
-    background-image: url("css/b2.jpg");
+    background-image: url("https://raw.githubusercontent.com/EmilyYeoh/FIT3179/master/Assignment2/css/b2.png");
 }
 
 h2, h3 {
@@ -89,7 +89,7 @@ margin: 0 auto;}
 .china-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
   gap: 0px 0px;
   grid-template-areas:
     "china_cases china_cases china_th"
@@ -102,6 +102,20 @@ margin: 0 auto;}
 
 #china_cases { grid-area: china_cases;
 }
+
+.top-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1.3fr 0.9fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "top10 top10 top10 top10"
+    "top10_th top10_th top10_th top10_th";
+}
+
+.top10 { grid-area: top10; }
+
+.top10_th { grid-area: top10_th; }
 
 
 
