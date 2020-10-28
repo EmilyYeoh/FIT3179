@@ -21,6 +21,8 @@
  }
  ],
  "hconcat": [{
+   "width": 400,
+   "height": 400,
    "title": "Total Confirmed Cases",
    "transform": [{"calculate": "datum.confirmed/datum.pop*1000000000", "as": "Cases per 1bil population"}],
    "mark": {"type": "geoshape", "stroke": "gray", "strokeWidth": 0.5},
@@ -42,6 +44,8 @@
  }
  },
  {
+   "width": 400,
+   "height": 400,
    "title": "Total Deaths",
    "transform": [{"calculate": "datum.deaths/datum.pop*1000000000", "as": "Cases per 1bil population"}],
    "mark": {"type": "geoshape", "stroke": "gray", "strokeWidth": 0.5},
