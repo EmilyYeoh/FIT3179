@@ -1,8 +1,8 @@
 {
  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
  "title": {"text": "CHINA COVID-19 CONFIRMED CASES (22/3/2020)", "anchor": "middle"},
- "width": 450,
- "height": 400,
+ "width": 800,
+ "height": 500,
  "projection": {"type": "equirectangular"},
  "data": {
  "url": "https://raw.githubusercontent.com/EmilyYeoh/FIT3179/master/Assignment2/js/provinces.topojson",
