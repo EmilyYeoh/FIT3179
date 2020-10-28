@@ -83,9 +83,7 @@ color: #000000;}
 display: block;
 margin: 0 auto;}
 
-#Symbol { grid-area: Symbol; 
-display: block;
-margin: 0 auto;}
+#Symbol { grid-area: Symbol;}
 
 /*
  * -- Layout Styles --
