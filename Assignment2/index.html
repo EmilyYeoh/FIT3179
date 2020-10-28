@@ -85,6 +85,12 @@
 </div>
   
 <h4> It was first identified amid an outbreak of respiratory illness cases in Wuhan City, Hubei Province, China. </h4>
+  
+  <div class="china-container">
+  <div class="china_cases"></div>
+  <div class="china_th"></div>
+</div>
+  
 <script type="text/javascript">
   
   var vis1 = "js/total_cases.json";
@@ -96,6 +102,19 @@
   var vis2 = "js/cases_slider.json";
   
   vegaEmbed('#Symbol', vis2).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  
+  var vis3 = "js/china_cases.json";
+  
+  vegaEmbed('#china_cases', vis3).then(function(result) {
+    // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+  }).catch(console.error);
+  
+  
+  var vis4 = "js/china_avgtemphum.json";
+  
+  vegaEmbed('#china_th', vis3).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
 </script>
