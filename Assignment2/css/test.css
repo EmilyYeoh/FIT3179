@@ -91,13 +91,11 @@ margin: 0 auto;}
   grid-template-rows: 0.8fr 0.9fr 1.3fr;
   gap: 0px 0px;
   grid-template-areas:
-    "tx china_cases china_cases"
+    "china_cases china_th china_th"
     "china_th china_th china_th"
     "Top-10 Top-10 Top-10";
 }
 
-.tx { grid-area: tx; 
-color: #000000;}
 
 #china_cases { grid-area: china_cases;
 display: block;
