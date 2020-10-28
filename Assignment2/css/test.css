@@ -17,7 +17,7 @@ p {
 .grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.8fr 0.3fr 1.9fr;
+  grid-template-rows: 0.8fr 0.3fr;
   gap: 0px 2px;
   grid-template-areas:
     "Sym1 Symp2 Sym3 Sym4 Sym5"
