@@ -75,19 +75,17 @@ color: #000000;}
   grid-template-rows: 0.3fr 1.4fr 1.3fr;
   gap: 0px 0px;
   grid-template-areas:
-    "LT LT ST ST ST"
     "Line Line Symbol Symbol Symbol"
     ". . . . .";
 }
 
-#Line { grid-area: Line; }
+#Line { grid-area: Line; 
+display: block;
+margin: 0 auto;}
 
-#Symbol { grid-area: Symbol; }
-
-.LT { grid-area: LT; }
-
-.ST { grid-area: ST; }
-
+#Symbol { grid-area: Symbol; 
+display: block;
+margin: 0 auto;}
 
 /*
  * -- Layout Styles --
