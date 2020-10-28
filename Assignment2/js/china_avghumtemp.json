@@ -2,7 +2,7 @@
  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "resolve": {"legend": {"color": "independent"}, "scale": {"color": "independent"}},
  "width": 800,
- "height": 600,
+ "height": 400,
  "projection": {"type": "equirectangular"},
  "data": {
  "url": "https://raw.githubusercontent.com/EmilyYeoh/FIT3179/master/Assignment2/js/provinces.topojson",
@@ -22,8 +22,8 @@
  ],
  "hconcat":[{
    "title": "China Average Humidity (22/01/2020 - 22/03/2020)",
-   "width": 500,
-   "height": 300,
+   "width": 400,
+   "height": 400,
 "mark": {"type": "geoshape", "stroke": "darkgrey", "strokeWidth": 0.5},
  "encoding": {"color": {
  "field": "avg_hum",
@@ -43,8 +43,8 @@
  }},
  {
   "title": "China Average Temperature (22/01/2020 - 22/03/2020)", 
-   "width": 500,
-   "height": 300,
+   "width": 400,
+   "height": 400,
    "mark": {"type": "geoshape", "stroke": "gray", "strokeWidth": 0.5},
  "encoding": {"color": {
  "field": "avg_temp",
