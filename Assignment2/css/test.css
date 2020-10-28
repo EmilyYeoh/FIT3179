@@ -25,8 +25,6 @@ p {
     ". . . . .";
 }
 
-
-
 .Sym1 { 
 grid-area: Sym1; 
 display: block;
@@ -49,11 +47,6 @@ margin: 0 auto;}
 display: block;
 margin: 0 auto;}
 
-.ST5 { grid-area: ST5; 
-text-align: center;
-color: #000000;}
-
-
 .ST1 { grid-area: ST1; 
 text-align: center;
 color: #000000;}
@@ -72,7 +65,28 @@ color: #000000;
 text-align: center;
 color: #000000;}
 
+.ST5 { grid-area: ST5; 
+text-align: center;
+color: #000000;}
 
+.vis-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr 1.4fr 1.3fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "LT LT ST ST ST"
+    "Line Line Symbol Symbol Symbol"
+    ". . . . .";
+}
+
+.Line { grid-area: Line; }
+
+.Symbol { grid-area: Symbol; }
+
+.LT { grid-area: LT; }
+
+.ST { grid-area: ST; }
 
 
 /*
