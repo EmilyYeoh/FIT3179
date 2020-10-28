@@ -103,8 +103,7 @@ display: block;
 margin: 0 auto;}
 
 #Top_10 { grid-area: Top_10; 
-display: block;
-margin: 0 auto;}
+}
 
 
 
