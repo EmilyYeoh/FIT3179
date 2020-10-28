@@ -101,8 +101,7 @@ margin: 0 auto;}
 #china_th { grid-area: china_th; }
 
 #china_cases { grid-area: china_cases;
-display: block;
-margin: 0 auto;}
+}
 
 
 
