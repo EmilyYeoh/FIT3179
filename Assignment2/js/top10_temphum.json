@@ -2,13 +2,13 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "data": {"url": "https://raw.githubusercontent.com/EmilyYeoh/FIT3179/master/Assignment2/data/by_country.csv"},
   "resolve": {"legend": {"color": "independent"}, "scale": {"color": "independent"}},
-  "vconcat": [
+  "hconcat": [
     {
       "title": {"text": "Humidity of Top 10 Countries affected by COVID-19", "anchor": "middle"},
     "selection": {"country": {"type": "interval", "on": "[mousedown[!event.shiftKey], mouseup] > mousemove",
       "translate": "[mousedown[!event.shiftKey], mouseup] > mousemove"}},
-    "width": 600,
-    "height": 200,
+    "width": 550,
+    "height": 300,
     "mark": {
     "type": "rect"},
   "encoding": {
@@ -35,8 +35,8 @@
   },
   {
     "title": {"text": "Temperature of Top 10 Countries affected by COVID-19", "anchor": "middle"},
-    "width": 600,
-    "height": 200,
+    "width": 550,
+    "height": 300,
     "mark": {
     "type": "rect",
     "strokeWidth": 2},
