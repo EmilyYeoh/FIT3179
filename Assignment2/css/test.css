@@ -85,7 +85,7 @@ margin: 0 auto;}
 
 #Symbol { grid-area: Symbol;}
 
-.grid-container {
+.china-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 0.7fr;
