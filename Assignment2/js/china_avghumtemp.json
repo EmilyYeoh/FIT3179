@@ -19,10 +19,10 @@
  }
  }
  ],
- "hconcat":[{
+ "vconcat":[{
    "title": "China Average Humidity (22/01/2020 - 22/03/2020)",
-   "width": 430,
-   "height": 400,
+   "width": 450,
+   "height": 250,
 "mark": {"type": "geoshape", "stroke": "darkgrey", "strokeWidth": 0.5},
  "encoding": {"color": {
  "field": "avg_hum",
@@ -42,8 +42,8 @@
  }},
  {
   "title": "China Average Temperature (22/01/2020 - 22/03/2020)", 
-   "width": 430,
-   "height": 400,
+   "width": 450,
+   "height": 250,
    "mark": {"type": "geoshape", "stroke": "gray", "strokeWidth": 0.5},
  "encoding": {"color": {
  "field": "avg_temp",
