@@ -72,7 +72,7 @@ color: #000000;}
 .vis-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 0.5fr 1.3fr 1fr;
+  grid-template-rows: 0.5fr;
   gap: 0px 0px;
   grid-template-areas:
     "Line Line Symbol Symbol Symbol"
@@ -84,6 +84,21 @@ display: block;
 margin: 0 auto;}
 
 #Symbol { grid-area: Symbol;}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.7fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "china_cases china_th china_th"
+    ". . ."
+    ". . .";
+}
+
+#china_cases { grid-area: china_cases; }
+
+#china_th { grid-area: china_th; }
 
 /*
  * -- Layout Styles --
