@@ -88,7 +88,7 @@ margin: 0 auto;}
 .china-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.8fr 0.9fr 1.3fr;
+  grid-template-rows: 0.5fr 1.3fr;
   gap: 0px 0px;
   grid-template-areas:
     "china_th china_th china_cases"
@@ -96,11 +96,11 @@ margin: 0 auto;}
 }
 
 
+#china_th { grid-area: china_th; }
+
 #china_cases { grid-area: china_cases;
 display: block;
 margin: 0 auto;}
-
-#china_th { grid-area: china_th; }
 
 #Top_10 { grid-area: Top-10; 
 display: block;
