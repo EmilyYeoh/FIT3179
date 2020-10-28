@@ -3,7 +3,7 @@
   "data": {"url": "https://raw.githubusercontent.com/EmilyYeoh/FIT3179/master/Assignment2/data/by_country.csv"},
   "title": "COVID-19 Cases (22/1/2020 - 22/3/2020)",
   "width": 500,
-  "height": 300,
+  "height": 400,
   "layer": [{
 "mark": "line",
   "transform": [{
