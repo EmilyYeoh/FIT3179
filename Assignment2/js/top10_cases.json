@@ -4,7 +4,7 @@
   "center": true,
   "data": {"url": "https://raw.githubusercontent.com/EmilyYeoh/FIT3179/master/Assignment2/data/by_country.csv"},
   "vconcat": [{
-"width": 1000,
+"width": 1200,
     "height": 400,
     "mark": {
         "type": "line",
@@ -42,8 +42,8 @@
       }]
   },
   {"hconcat": [{
-    "width": 500,
-    "height": 300,
+    "width": 600,
+    "height": 400,
     "mark": {
     "type": "circle"},
   "encoding": {
@@ -74,8 +74,8 @@
   ]
   },
   {
-    "width": 500,
-    "height": 300,
+    "width": 600,
+    "height": 400,
     "mark": {
     "type": "circle"},
   "encoding": {
