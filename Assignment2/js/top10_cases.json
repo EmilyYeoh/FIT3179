@@ -4,7 +4,7 @@
   "center": true,
   "data": {"url": "https://raw.githubusercontent.com/EmilyYeoh/FIT3179/master/Assignment2/data/by_country.csv"},
   "vconcat": [{
-"width": 1300,
+"width": 1250,
     "height": 400,
     "mark": {
         "type": "line",
