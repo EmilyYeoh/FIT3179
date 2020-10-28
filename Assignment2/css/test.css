@@ -91,14 +91,19 @@ margin: 0 auto;}
   grid-template-rows: 0.7fr;
   gap: 0px 0px;
   grid-template-areas:
-    "china_cases china_th china_th"
+    "tx china_cases china_cases"
     ". . ."
     ". . .";
 }
 
+.tx { grid-area: tx; 
+text-align: center;
+color: #000000;
+}
+
+
 #china_cases { grid-area: china_cases; }
 
-#china_th { grid-area: china_th; }
 
 /*
  * -- Layout Styles --
