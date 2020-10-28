@@ -80,9 +80,9 @@ color: #000000;}
     ". . . . .";
 }
 
-.Line { grid-area: Line; }
+#Line { grid-area: Line; }
 
-.Symbol { grid-area: Symbol; }
+#Symbol { grid-area: Symbol; }
 
 .LT { grid-area: LT; }
 
