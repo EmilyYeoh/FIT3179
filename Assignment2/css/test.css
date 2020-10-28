@@ -99,11 +99,15 @@ margin: 0 auto;}
 .tx { grid-area: tx; 
 color: #000000;}
 
-#china_cases { grid-area: china_cases; }
+#china_cases { grid-area: china_cases;
+display: block;
+margin: 0 auto;}
 
 #china_th { grid-area: china_th; }
 
-#Top-10 { grid-area: Top-10; }
+#Top-10 { grid-area: Top-10; 
+display: block;
+margin: 0 auto;}
 
 
 
