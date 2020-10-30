@@ -27,11 +27,12 @@
  "type": "quantitative",
  "scale": {
  "type": "threshold",
- "domain": [1,10, 50, 150, 300, 450, 600, 750, 900, 1050,1300],
- "range": ["#fbe7dc","#fad1bd","#fcb49a","#fc9e80","#fc8767", "#fa7051", "#f6573f","#ec3f2f","#d4322c","#de1b20","#ca0b22","#b21218"]
+ "domain": [1,10, 50, 150, 300, 450, 600, 750, 900, 1050],
+ "range": ["#faf4f1","#fbe7dc","#fad1bd","#fcb49a","#fc9e80","#fc8767", "#fa7051", "#f6573f","#ec3f2f","#d4322c","#b21218"]
  },
  "legend": {
-  "title": "Cases/1Bil pop"
+  "title": "Cases per 1Bil pop",
+  "orient": "left"
  }
  },
  "tooltip": [
@@ -42,4 +43,3 @@
  ]
  }
 } 
-
