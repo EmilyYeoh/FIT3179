@@ -32,7 +32,9 @@
  },
  "legend": {
   "title": ["Cases per", "1Bil pop"],
-  "orient": "left"
+  "orient": "left",
+  "titleFontSize": 8.5,
+  "labelFontSize": 8.5
  }
  },
  "tooltip": [
