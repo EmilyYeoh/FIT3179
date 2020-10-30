@@ -33,7 +33,7 @@
  "legend": {
   "title": ["Cases", "per 1Bil", "population"],
   "orient": "left",
-  "titleFontSize": 10,
+  "titleFontSize": 9,
   "labelFontSize": 8.5
  }
  },
