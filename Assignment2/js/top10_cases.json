@@ -3,9 +3,9 @@
   "title": {"text": "Top 10 Countries affected by COVID-19", "anchor": "middle"},
   "center": true,
   "data": {"url": "https://raw.githubusercontent.com/EmilyYeoh/FIT3179/master/Assignment2/data/by_country.csv"},
-  "vconcat": [{
-"width": 1200,
-    "height": 400,
+  "hconcat": [{
+"width": 800,
+    "height": 550,
     "mark": {
         "type": "area",
         "strokeWidth": 2.5, 
@@ -42,9 +42,9 @@
         "filter": "datum.Country == 'China' || datum.Country == 'Italy' || datum.Country == 'United States of America' || datum.Country == 'Spain' || datum.Country == 'Germany' || datum.Country == 'Iran' || datum.Country == 'France' || datum.Country == 'United Kingdom' || datum.Country == 'South Korea' || datum.Country == 'Switzerland'"
       }]
   },
-  {"hconcat": [{
-    "width": 600,
-    "height": 400,
+  {"vconcat": [{
+    "width": 450,
+    "height": 250,
     "mark": {
     "type": "circle"},
   "encoding": {
@@ -75,8 +75,8 @@
   ]
   },
   {
-    "width": 600,
-    "height": 400,
+    "width": 450,
+    "height": 250,
     "mark": {
     "type": "circle"},
   "encoding": {
