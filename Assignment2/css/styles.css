@@ -117,7 +117,9 @@ margin: 0 auto;}
     "top10_th top10_th top10_th top10_th";
 }
 
-#top10 { grid-area: top10; }
+#top10 { grid-area: top10; 
+display: block;
+margin: 0 auto;}
 
 #top10_th { grid-area: top10_th; }
 
