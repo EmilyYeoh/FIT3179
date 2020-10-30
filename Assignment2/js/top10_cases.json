@@ -1,4 +1,4 @@
-]{
+{
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "title": {"text": "Top 10 Countries affected by COVID-19", "anchor": "middle"},
   "center": true,
