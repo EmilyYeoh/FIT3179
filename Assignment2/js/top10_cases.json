@@ -1,13 +1,13 @@
-{
+]{
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
   "title": {"text": "Top 10 Countries affected by COVID-19", "anchor": "middle"},
   "center": true,
   "data": {"url": "https://raw.githubusercontent.com/EmilyYeoh/FIT3179/master/Assignment2/data/by_country.csv"},
   "vconcat": [{
-"width": 1250,
+"width": 1200,
     "height": 400,
     "mark": {
-        "type": "line",
+        "type": "area",
         "strokeWidth": 2.5, 
         "interpolate": "natural"},
       "selection": {
@@ -25,6 +25,7 @@
           "field": "confirmed",
           "aggregate": "sum",
           "axis": {"grid": false},
+          "stack": "center",
           "title": "Total Confirmed Cases"   
         },
         "color": {"field":"Country", "scale":{"scheme": "tableau10"}},
@@ -42,7 +43,7 @@
       }]
   },
   {"hconcat": [{
-    "width": 650,
+    "width": 600,
     "height": 400,
     "mark": {
     "type": "circle"},
@@ -74,7 +75,7 @@
   ]
   },
   {
-    "width": 650,
+    "width": 600,
     "height": 400,
     "mark": {
     "type": "circle"},
