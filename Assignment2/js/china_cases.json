@@ -31,7 +31,7 @@
  "range": ["#faf4f1","#fbe7dc","#fad1bd","#fcb49a","#fc9e80","#fc8767", "#fa7051", "#f6573f","#ec3f2f","#d4322c","#b21218"]
  },
  "legend": {
-  "title": "Cases/1Bil pop",
+  "title": ["Cases per", "1Bil pop"],
   "orient": "left"
  }
  },
