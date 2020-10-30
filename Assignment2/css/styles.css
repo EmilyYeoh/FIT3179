@@ -2,7 +2,7 @@ body {
     color: #526066;
 }
 
-h2, h3 {
+h2 {
     letter-spacing: 0.20em;
     text-transform: uppercase;
     font-weight: 600;
@@ -10,7 +10,7 @@ h2, h3 {
     color: #000000
 }
 
-h4{
+h3{
 text-align: center;	
 	color: #000000
 font-weight: 100;}	
