@@ -1,11 +1,12 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
-  "title": {"text": "Top 10 Countries affected by COVID-19", "anchor": "middle"},
+  "title": {"text": "Top 10 Countries affected by COVID-19", "anchor": "middle", "fontSize": 15},
   "center": true,
   "data": {"url": "https://raw.githubusercontent.com/EmilyYeoh/FIT3179/master/Assignment2/data/by_country.csv"},
   "hconcat": [{
 "width": 800,
     "height": 550,
+    "title": "Reported Cases",
     "mark": {
         "type": "area",
         "strokeWidth": 2.5, 
@@ -45,6 +46,7 @@
   {"vconcat": [{
     "width": 450,
     "height": 250,
+    "title": "Correlation between number of cases and population",
     "mark": {
     "type": "circle"},
   "encoding": {
@@ -77,6 +79,7 @@
   {
     "width": 450,
     "height": 250,
+    "title": "Correlation between number of cases and median age",
     "mark": {
     "type": "circle"},
   "encoding": {
