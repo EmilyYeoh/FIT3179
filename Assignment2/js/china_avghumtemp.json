@@ -34,7 +34,7 @@
  },
   
   "legend": {
-  "title": "Average Humidity"
+  "title": ["Average", "Humidity"]
  }
  },
  "tooltip": [
@@ -58,7 +58,7 @@
  "range": ["#6babd0","#afd3e6","#e0eaed","#f2f0eb","#f8e7d0", "#fbca8b", "#ec9d3e","#c5690d"]
  },
   "legend": {
-  "title": "Average Temperature"
+  "title": ["Average", "Temperature"]
  }
  },
  "tooltip": [
