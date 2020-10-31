@@ -35,7 +35,7 @@
   
   "legend": {
   "title": "Average Humidity",
-   "titleFontSize": 9
+   "titleFontSize": 9.5
  }
  },
  "tooltip": [
@@ -60,7 +60,7 @@
  },
   "legend": {
   "title": "Average Temperature",
-   "titleFontSize": 9
+   "titleFontSize": 9.5
  }
  },
  "tooltip": [
